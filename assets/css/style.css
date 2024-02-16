@@ -1,0 +1,17 @@
+
+@media (min-width: 576px) {.mi-xs {display: block;} }
+
+@media (min-width: 768px) { .mi-sm {display: block;} }
+
+@media (min-width: 992px) { .mi-md {display: block;} }
+
+@media (min-width: 1200px) { .mi-lg {display: block;} }
+
+.primer-contenido nav{
+    width: 80%;
+    margin-left: 10%;
+}
+.carrusel-img {
+    top: -90px;
+    z-index: -1;
+}
