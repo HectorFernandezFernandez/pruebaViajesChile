@@ -8,38 +8,40 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <!-- cabecera -->
-    <header class="primer-contenido img-1">
+    <header class="primer-contenido img-1" id="inicio">
         <nav class="navbar navbar-light navbar-expand-md">
-            <img src="./assets/img/viajes.svg" style="max-width: 30px;">
-            <h1 class="text-white">Viajes Chile</h1>
+            <img src="./assets/img/viajes.svg" style="max-width: 30px;" class="col-xs-2">
+            <h1 class="text-white" id="viajesChile">Viajes Chile</h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
-                <span class="navbar-toggler-icon">   
-                <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+            <span class="navbar-toggler-icon col-xs-2">   
+                <i class="fas fa-bars" style="color:#fff; font-size:2px;"></i>
             </span>
             </button>
-                <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#inicio">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#quienesSomos">Quienes somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#destacados">Destacados</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#contacto">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#quienesSomos">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#destacados">Destacados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <div id="carouselExampleControls" class="carousel slide carrusel-img" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="margin-top: -72px; max-height: 800px;">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="carousel1.jpg">
@@ -53,13 +55,13 @@
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
+              <span class="sr-only">Anterior</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
+              <span class="sr-only">Siguiente</span>
             </a>
-        </div>
+          </div>
     </header>
     <!-- cuerpo -->
     <main class="container-fluid">
@@ -70,15 +72,28 @@
                 <h5></h5>
                 <br>
                 <div class="col-lg-3">
-                    <i class="fa-solid fa-plane"></i>
+                    <a class="tooltip-container">
+                        <i class="fa-solid fa-plane"></i>
+                        <span class="tooltip-text-forma"></span>
+                        <span class="tooltip-text">Viajes en avión</span>
+                    </a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
                 <div class="col-lg-3">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <i class="fa-solid fa-mountain"></i>
+                    <a class="tooltip-container">
+                        <i class="fa-solid fa-mountain"></i>
+                        <span class="tooltip-text-forma"></span>
+                        <span class="tooltip-text">Viajes a la montaña</span>
+                    </a>
                 </div>
                 <div class="col-lg-3">
-                    <i class="fa-solid fa-route"></i>
+                    <a class="tooltip-container">
+                        <i class="fa-solid fa-route"></i>
+                        <span class="tooltip-text-forma"></span>
+                        <span class="tooltip-text">Planeación de rutas</span>
+                    </a>
+
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </section>
@@ -112,31 +127,39 @@
                 <form class="container justify-content-center">
                     <div class="form-group">
                       <label for="nombre">Nombre</label>
-                      <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                      <input type="text" class="form-control" id="nombre" placeholder="Nombre" oninput="guardarValor('nombre', this.value)">
                     </div>
                     <div class="form-group">
                         <label for="correo">Asunto</label>
-                        <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+                        <input type="email" class="form-control" id="asunto" placeholder="Asunto" oninput="guardarValor('correo', this.value)">
                       </div>
                     <div class="form-group">
                       <label for="mensaje">Mensaje</label>
-                      <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe aquí tu mensaje"></textarea>
+                      <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe aquí tu mensaje" oninput="guardarValor('mensaje', this.value)"></textarea>
                     </div>
                 </form>
                 <a class="col-12">
-                    <button type="button" class="btn btn-primary">Enviar</button>
+                    <button type="button" class="btn btn-primary" id="enviarCorreo">Enviar</button>
                 </a>
             </section>
         </article>
     </main>
     <!-- pie de pagina -->
-    <footer class="quinto-contenido row text-white">
+    <footer class="quinto-contenido row text-white" style="margin: 0 0 0 0;">
         <h2 class="col-4">Viajes Chile</h2>
         <section class="col-8 text-center justify-content-center">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-github-square"></i>
-            <i class="fab fa-instagram-square"></i>
-            <i class="fab fa-twitter-square"></i>
+            <a href="https://www.facebook.com" style="text-decoration: none; color: inherit;">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://github.com" style="text-decoration: none; color: inherit;">
+                <i class="fab fa-github-square"></i>
+            </a>
+            <a href="https://www.instagram.com" style="text-decoration: none; color: inherit;">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+            <a href="https://twitter.com" style="text-decoration: none; color: inherit;">
+                <i class="fab fa-twitter-square"></i>
+            </a>
         </section>
               
     </footer>
@@ -145,4 +168,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/codigo_1.js"></script>
+    <script>
+        var valoresGuardados = {};
+
+        function guardarValor(campo, valor) {
+            valoresGuardados[campo] = valor;
+        }
+    </script>
 </html>
